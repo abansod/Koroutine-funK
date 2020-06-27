@@ -1,2 +1,1 @@
-# reactive-solr-client
-Non-Blocking Solr Client
+# Functional support for kotlin Coroutine
