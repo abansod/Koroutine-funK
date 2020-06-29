@@ -1,2 +1,2 @@
-rootProject.name = "reactive-solr-client"
+rootProject.name = "funKoroutine"
 

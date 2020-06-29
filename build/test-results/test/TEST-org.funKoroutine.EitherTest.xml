@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.funKoroutine.EitherTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-06-29T18:55:04" hostname="Akshay-Macbook-Pro.local" time="0.121">
+  <properties/>
+  <testcase name="should get left or null()" classname="org.funKoroutine.EitherTest" time="0.007"/>
+  <testcase name="should transform using map()" classname="org.funKoroutine.EitherTest" time="0.051"/>
+  <testcase name="should flatMapLeft()" classname="org.funKoroutine.EitherTest" time="0.001"/>
+  <testcase name="should fold the either right with suspended handler()" classname="org.funKoroutine.EitherTest" time="0.001"/>
+  <testcase name="should fold the either()" classname="org.funKoroutine.EitherTest" time="0.001"/>
+  <testcase name="should flatMapRight()" classname="org.funKoroutine.EitherTest" time="0.054"/>
+  <testcase name="should get Right or null()" classname="org.funKoroutine.EitherTest" time="0.0"/>
+  <testcase name="should get isRight()" classname="org.funKoroutine.EitherTest" time="0.0"/>
+  <testcase name="should swap the components()" classname="org.funKoroutine.EitherTest" time="0.001"/>
+  <testcase name="should get isLeft()" classname="org.funKoroutine.EitherTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
