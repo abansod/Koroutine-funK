@@ -1,4 +1,4 @@
-package org.funKoroutine.validation
+package org.kotora.validation
 
 import io.kotlintest.matchers.collections.shouldContainExactly
 import io.kotlintest.matchers.collections.shouldHaveSize

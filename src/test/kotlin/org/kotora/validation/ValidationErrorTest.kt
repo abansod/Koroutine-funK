@@ -1,4 +1,4 @@
-package org.funKoroutine.validation
+package org.kotora.validation
 
 import io.kotlintest.shouldBe
 import org.junit.jupiter.api.Test

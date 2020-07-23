@@ -1,4 +1,4 @@
-package org.funKoroutine.validation
+package org.kotora.validation
 
 import kotlin.reflect.KProperty0
 

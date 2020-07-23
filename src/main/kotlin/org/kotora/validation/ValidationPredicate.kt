@@ -1,4 +1,4 @@
-package org.funKoroutine.validation
+package org.kotora.validation
 
 
 inline fun <R> `equal to`(crossinline block: () -> R?): (R?) -> ValidationResult {

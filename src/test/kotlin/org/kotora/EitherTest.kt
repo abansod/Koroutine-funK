@@ -1,4 +1,4 @@
-package org.funKoroutine
+package org.kotora
 
 import io.kotlintest.matchers.types.shouldBeTypeOf
 import io.kotlintest.shouldBe

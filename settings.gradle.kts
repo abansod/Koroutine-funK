@@ -1,2 +1,2 @@
-rootProject.name = "funKoroutine"
+rootProject.name = "kotora"
 

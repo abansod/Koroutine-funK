@@ -1,4 +1,4 @@
-package org.funKoroutine
+package org.kotora
 
 sealed class Either<L, R> {
 
