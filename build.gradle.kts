@@ -1,8 +1,9 @@
 plugins {
+    id("maven-publish")
     kotlin("jvm") version "1.3.72"
 }
 
-group = "org.funKoroutine"
+group = "org.kotlin-knights"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -33,5 +34,23 @@ tasks {
     }
     compileTestKotlin {
         kotlinOptions.jvmTarget = "1.8"
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+            name = rootProject.name
+            url = uri("https://maven.pkg.github.com/abansod/${rootProject.name}")
+            credentials {
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+            }
+        }
+    }
+    publications {
+        register<MavenPublication>("gpr") {
+            from(components["java"])
+        }
     }
 }
