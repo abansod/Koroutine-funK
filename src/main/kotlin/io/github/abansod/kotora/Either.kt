@@ -1,4 +1,4 @@
-package org.kotora
+package io.github.abansod.kotora
 
 sealed class Either<L, R> {
 

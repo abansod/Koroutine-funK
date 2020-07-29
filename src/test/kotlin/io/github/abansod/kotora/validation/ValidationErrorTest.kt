@@ -1,4 +1,4 @@
-package org.kotora.validation
+package io.github.abansod.kotora.validation
 
 import io.kotlintest.shouldBe
 import org.junit.jupiter.api.Test

@@ -1,4 +1,4 @@
-package org.kotora.validation
+package io.github.abansod.kotora.validation
 
 import io.kotlintest.matchers.collections.shouldContainExactly
 import io.kotlintest.matchers.collections.shouldHaveSize

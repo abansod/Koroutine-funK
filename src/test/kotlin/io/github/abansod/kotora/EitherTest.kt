@@ -1,4 +1,4 @@
-package org.kotora
+package io.github.abansod.kotora
 
 import io.kotlintest.matchers.types.shouldBeTypeOf
 import io.kotlintest.shouldBe

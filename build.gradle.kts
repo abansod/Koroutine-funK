@@ -6,8 +6,8 @@ plugins {
     kotlin("jvm") version "1.3.72"
 }
 
-group = "org.kotlin-knights"
-version = "1.0-SNAPSHOT"
+group = "io.github.abansod"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -40,10 +40,20 @@ tasks {
     }
 }
 
+
+task("sourceJar", Jar::class) {
+    description = "Assembles source JAR"
+    archiveClassifier.set("sources")
+    from(sourceSets.main.get().allSource)
+}
+
+tasks.jar.get().dependsOn(tasks["sourceJar"])
+
 publishing {
     publications {
         register<MavenPublication>("kotora-core") {
             from(components["java"])
+            artifact(tasks["sourceJar"])
         }
     }
 }
@@ -57,10 +67,9 @@ bintray {
     pkg(closureOf<BintrayExtension.PackageConfig> {
         repo = "kotora"
         name = "kotora"
-        userOrg = "kotlin-knights"
         setLicenses("Apache-2.0")
         vcsUrl = "https://github.com/abansod/Kotora.git"
-        setLabels("kotlin", "kotoraa")
+        setLabels("kotlin", "kotora")
         publicDownloadNumbers = true
     })
 }

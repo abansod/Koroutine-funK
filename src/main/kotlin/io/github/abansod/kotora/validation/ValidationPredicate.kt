@@ -1,4 +1,4 @@
-package org.kotora.validation
+package io.github.abansod.kotora.validation
 
 
 inline fun <R> `equal to`(crossinline block: () -> R?): (R?) -> ValidationResult {
